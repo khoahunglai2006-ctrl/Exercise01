@@ -4,6 +4,7 @@
     {
         ex01();
         ex02();
+        ex03();
     }
     static void ex01()
     {
@@ -31,4 +32,27 @@
         Console.WriteLine($"The tich hinh cau: {V}");
         Console.WriteLine($"Dien tich hinh cau: {S}");
     }
+     static void ex03()
+{
+    Console.Write("Nhap so a: ");
+    double a = 0;
+    double b = 0;
+    while (!double.TryParse(Console.ReadLine(), out a))
+    {
+        Console.Write("Gia tri khong hop le, vui long nhap lai: ");
+    }
+    Console.Write("Nhap so b: ");
+    while (!double.TryParse(Console.ReadLine(), out b))
+    {
+        Console.Write("Gia tri khong hop le, vui long nhap lai: ");
+    }
+    Console.WriteLine($"""
+        Tong = {a+b}
+        Hieu = {a-b}
+        Tich = {a*b}
+        Thuong = {(b != 0 ? a / b : "Khong the chia cho 0")}
+        Chia lay phan du = {(b != 0 ? a % b : "Khong the chia cho 0")}
+        """);    
+    }                     
+
 }
