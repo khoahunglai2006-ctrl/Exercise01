@@ -54,5 +54,4 @@
         Chia lay phan du = {(b != 0 ? a % b : "Khong the chia cho 0")}
         """);
     }
-
 }
